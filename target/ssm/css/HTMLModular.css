@@ -1,0 +1,308 @@
+.big_frame{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(32,29,29,0.1);
+}
+.colorful {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(95, 133, 255, 1) 0%, rgba(107, 220, 94, 1) 100%);
+    opacity: 1;
+    border-radius: 6px;
+}
+
+.title_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: rgba(32, 29, 29, 1);
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgba(255, 249, 95, 1);
+    letter-spacing: 21px;
+}
+.frame_white {
+    top: 80px;
+    padding-bottom: 50px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.move_block{
+    top: 50px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    /*transition:要过渡的属性 花费时间 运动曲线（linear线性,ease逐渐慢下来,ease-in加速,ease-in-out先加速后减速） 几时开始*/
+    animation: move 5s linear infinite,color 5s linear infinite;
+}
+.move_block:hover{
+    animation-play-state:paused;
+}
+@keyframes color{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: green;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: gray;
+    }
+    100%{
+        background-color: red;
+    }
+}
+.frame_icon_title {
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+}
+
+.text_title {
+    margin-left: 20px;
+    font-size:20px;
+    font-family:Segoe UI;
+    font-weight:900;
+    line-height:30px;
+    color:rgba(247,148,29,1);
+    letter-spacing:5px;
+    align-self: center;
+}
+.frame_question{
+    margin-top: 99px;
+    margin-left: 227px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.text_question{
+    font-size:26px;
+    font-family:Segoe UI;
+    font-weight:bold;
+    line-height:30px;
+    color:rgba(247,148,29,1);
+    letter-spacing:3px;
+}
+.frame_answer{
+    margin-top: 42px;
+    display: flex;
+    justify-content:space-between;
+    width:250px;
+    align-self: center;
+}
+.button_answer{
+    width:64px;
+    height:41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:23px;
+    font-family:Segoe UI;
+    font-weight:bold;
+    line-height:30px;
+    color:rgba(247,148,29,1);
+    background:rgba(255,255,255,1);
+    border:2px solid rgba(112,112,112,1);
+    transition:background-color 0.5s;
+}
+.button_answer:hover{
+    background:rgba(32,29,29,0.1);
+}
+.frame_moveColor{
+    top: 140px;
+    width: 650px;
+    font-family:KaiTi;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 5px;
+    line-height: 50px;
+    color: white;
+    transition:left 2s ease;
+    z-index:100;
+}
+.pictures{
+    width: 100px;
+    height: 100px;
+    left: 880px;
+    position: relative;
+    z-index:101;
+}
+.pictures img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index:100;
+    transition:all 2s ease;
+    transform-origin: -50% -50%;
+}
+.pictures:hover .move_dio2{
+    transform:rotate(90deg)
+}
+.pictures:hover .move_dio3{
+    transform:rotate(180deg)
+}
+.pictures:hover .move_dio4{
+    transform:rotate(270deg)
+}
+
+.dios-enter-active,.dios-leave-active{
+    transition:opacity 3s,top 1s linear;
+}
+.dios-enter{
+    opacity:0;
+}
+.dios-leave-active{
+    opacity:0;
+}
+
+
+.frame_orange{
+    top: 577px;
+    position: absolute;
+    margin-top: 199px;
+    width:1000px;
+    height:384px;
+    align-self: center;
+    background:rgba(247,148,29,1);
+}
+.frame_down{
+    margin-top: 550px;
+    display: flex;
+}
+.frame_fileList{
+    margin:50px 95px 0px 81px;
+    display: flex;
+    width:450px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(112,112,112,1);
+    flex-wrap: wrap;
+}
+.frame_file{
+    margin:20px 20px 20px 20px;
+    width:161px;
+    height:149px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(112,112,112,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.picture_file{
+    width:57px;
+    height:57px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(112,112,112,1);
+}
+.text_fileName{
+    font-size:13px;
+    font-family:Segoe UI;
+    font-weight:400;
+    line-height:30px;
+    color:rgba(21,27,22,1);
+    letter-spacing:1px;
+}
+.frame_file_down{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.frame_coffee{
+    margin:50px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.QRcode{
+    width: 250px;
+    height: 250px;
+}
+.text_thanks{
+    margin-top: 40px;
+    width:170px;
+    font-size:20px;
+    font-family:Segoe UI;
+    font-weight:400;
+    line-height:30px;
+    color:rgba(21,27,22,1);
+    letter-spacing:2px;
+}
+.frame_util{
+    width: 220px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.frame_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor:pointer;
+}
+.home{
+    width: 50px;
+    height: 50px;
+}
+.text_icon{
+    margin-top: 8px;
+    font-size:20px;
+    font-family:Segoe UI;
+    font-weight:400;
+    line-height:30px;
+    color:rgba(21,27,22,1);
+    letter-spacing:2px;
+    cursor:pointer;
+}
+.popup{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.tanchuang{
+    position: relative;
+    background: black;
+    opacity:0.5;
+    width: 50%;
+    height: 80%;
+    border-radius: 5px;
+    margin: 5% auto;}
+.close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background: red;
+    color: #fff;
+    right: 356px;
+    top: 71px;
+    text-align: center;
+}

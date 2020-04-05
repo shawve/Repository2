@@ -1,0 +1,91 @@
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+.file_select {
+    display: flex;
+}
+
+.file_select div {
+    margin-top: 10px;
+    align-self: center;
+    height: 20px;
+}
+
+.file_newName {
+    align-self: center;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    border: 1px double black;
+}
+
+.file {
+    align-self: center;
+    margin-top: 10px;
+}
+
+.role {
+    margin-right: 67px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.type {
+    align-self: center;
+}
+.back {
+
+    align-self: center;
+    padding: 0px 5px 0px 5px;
+    height: 30px;
+    border: 1px solid black;
+    background: white;
+}
+
+.back:hover {
+    background: rgba(32, 29, 29, 0.1);
+}
+
+.button {
+    padding: 0px 5px 0px 5px;
+    height: 30px;
+    align-self: center;
+    margin-top: 484px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background: white;
+}
+
+.button:hover {
+    background: rgba(32, 29, 29, 0.1);
+}
+
+/*上传*/
+.submit {
+    align-self: center;
+    margin-top: 15px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
